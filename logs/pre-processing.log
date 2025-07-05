@@ -1,0 +1,9 @@
+2025-07-05 13:38:28,730-preprocessing-DEBUG-data loading is done.
+2025-07-05 13:38:28,736-preprocessing-INFO-pre-processing started.
+2025-07-05 13:38:28,738-preprocessing-INFO-unwanted columns removed.
+2025-07-05 13:38:28,756-preprocessing-INFO-dictionary is created.
+2025-07-05 13:38:28,759-preprocessing-DEBUG-dict are encoded.
+2025-07-05 13:38:28,769-preprocessing-DEBUG-reales and artist name encoded
+2025-07-05 13:38:28,812-preprocessing-DEBUG-transformation applied on loudness and duration.
+2025-07-05 13:38:28,812-preprocessing-DEBUG-pre-processing is done.
+2025-07-05 13:38:28,885-preprocessing-DEBUG-clean data is stored in ./data\clean_data
