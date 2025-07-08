@@ -7,6 +7,7 @@ from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
+import yaml
 
 
 # Setup logging
@@ -25,6 +26,20 @@ file_handler.setFormatter(formatter)
 
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
+
+
+def load_param(param_path: str) -> dict:
+    '''this functin load parametrs from param.yaml file'''
+    try:
+        with open(param_path, 'r') as file:
+            config = yaml.safe_load(file)
+        return config
+    except FileNotFoundError:
+        logger.error("File Not Fund: ", load_param)
+        raise
+    except Exception as e:
+        logger.error("Erro occured: ",e)
+        raise
 
 
 def model_training(x_train: np.ndarray, param: dict) -> KMeans:
@@ -61,24 +76,16 @@ def save_model(model: KMeans, path: Path) -> None:
 
 def main():
     try:
+        params = load_param('params.yaml')
+        test_size = params['model']['test_size']
         # Parameters
-        params = {
-            'n_clusters': 8,
-            'init': 'k-means++',
-            'n_init': 10,
-            'max_iter': 300,
-            'tol': 1e-4,
-            'verbose': 0,
-            'random_state': 42,
-            'copy_x': True,
-            'algorithm': 'lloyd'
-        }
+        params = params['model']['parameter']
 
         data_path = Path('data/clean_data/clean_data1.csv')
         df = pd.read_csv(data_path)
         logger.info("Data loaded from %s", data_path)
 
-        x_train, x_test = train_test_split(df, test_size=0.2, random_state=42)
+        x_train, x_test = train_test_split(df, test_size=test_size, random_state=42)
         logger.debug("Data split into training and test sets.")
 
         save_dir = Path('data/clean_data')

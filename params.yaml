@@ -1,0 +1,12 @@
+model:
+  test_size: 0.3
+  parameter:
+    n_clusters: 8
+    init: k-means++
+    n_init: 10
+    max_iter: 300
+    tol: 1e-4
+    verbose: 0
+    random_state: 42
+    copy_x: true
+    algorithm: lloyd
