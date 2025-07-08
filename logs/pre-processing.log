@@ -7,3 +7,12 @@
 2025-07-05 13:38:28,812-preprocessing-DEBUG-transformation applied on loudness and duration.
 2025-07-05 13:38:28,812-preprocessing-DEBUG-pre-processing is done.
 2025-07-05 13:38:28,885-preprocessing-DEBUG-clean data is stored in ./data\clean_data
+2025-07-08 12:56:18,584-preprocessing-DEBUG-data loading is done.
+2025-07-08 12:56:18,584-preprocessing-INFO-pre-processing started.
+2025-07-08 12:56:18,592-preprocessing-INFO-unwanted columns removed.
+2025-07-08 12:56:18,606-preprocessing-INFO-dictionary is created.
+2025-07-08 12:56:18,607-preprocessing-DEBUG-dict are encoded.
+2025-07-08 12:56:18,617-preprocessing-DEBUG-reales and artist name encoded
+2025-07-08 12:56:18,642-preprocessing-DEBUG-transformation applied on loudness and duration.
+2025-07-08 12:56:18,643-preprocessing-DEBUG-pre-processing is done.
+2025-07-08 12:56:18,693-preprocessing-DEBUG-clean data is stored in ./data\clean_data

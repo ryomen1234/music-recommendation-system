@@ -4,3 +4,6 @@
 2025-07-02 11:29:48,130-data_ingestion-ERROR-Failed to complete data injestion process: [Errno 13] Permission denied: './data\\raw'
 2025-07-02 11:34:52,603-data_ingestion-DEBUG-path is loaded successfully: E:\project\Music Recommendation System\Data\msd_features.csv
 2025-07-02 11:34:52,638-data_ingestion-DEBUG-data loading is successful.
+2025-07-08 12:56:04,960-data_ingestion-DEBUG-path is loaded successfully: E:\project\Music Recommendation System\Data\msd_features.csv
+2025-07-08 12:56:05,016-data_ingestion-DEBUG-data loading is successful.
+2025-07-08 12:56:05,096-data_ingestion-DEBUG-data is saved successfulyy.

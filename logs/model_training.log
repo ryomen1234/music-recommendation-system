@@ -5,3 +5,17 @@
 2025-07-05 18:19:21,364 - __main__ - DEBUG - Initializing KMeans with parameters: {'n_clusters': 8, 'init': 'k-means++', 'n_init': 10, 'max_iter': 300, 'tol': 0.0001, 'verbose': 0, 'random_state': 42, 'copy_x': True, 'algorithm': 'lloyd'}
 2025-07-05 18:19:24,319 - __main__ - INFO - KMeans training completed.
 2025-07-05 18:19:24,329 - __main__ - INFO - Model saved at models\model.pkl
+2025-07-08 12:56:22,565 - __main__ - INFO - Data loaded from data\clean_data\clean_data1.csv
+2025-07-08 12:56:22,567 - __main__ - DEBUG - Data split into training and test sets.
+2025-07-08 12:56:22,619 - __main__ - INFO - Train-test data saved.
+2025-07-08 12:56:22,619 - __main__ - DEBUG - Starting preprocessing with StandardScaler.
+2025-07-08 12:56:22,622 - __main__ - DEBUG - Initializing KMeans with parameters: {'n_clusters': 8, 'init': 'k-means++', 'n_init': 10, 'max_iter': 300, 'tol': 0.0001, 'verbose': 0, 'random_state': 42, 'copy_x': True, 'algorithm': 'lloyd'}
+2025-07-08 12:56:24,934 - __main__ - INFO - KMeans training completed.
+2025-07-08 12:56:24,935 - __main__ - INFO - Model saved at models\model.pkl
+2025-07-08 12:57:46,605 - __main__ - INFO - Data loaded from data\clean_data\clean_data1.csv
+2025-07-08 12:57:46,608 - __main__ - DEBUG - Data split into training and test sets.
+2025-07-08 12:57:46,658 - __main__ - INFO - Train-test data saved.
+2025-07-08 12:57:46,659 - __main__ - DEBUG - Starting preprocessing with StandardScaler.
+2025-07-08 12:57:46,662 - __main__ - DEBUG - Initializing KMeans with parameters: {'n_clusters': 8, 'init': 'k-means++', 'n_init': 10, 'max_iter': 300, 'tol': 0.0001, 'verbose': 0, 'random_state': 42, 'copy_x': True, 'algorithm': 'lloyd'}
+2025-07-08 12:57:48,562 - __main__ - INFO - KMeans training completed.
+2025-07-08 12:57:48,563 - __main__ - INFO - Model saved at models\model.pkl
