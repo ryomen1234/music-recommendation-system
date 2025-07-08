@@ -37,18 +37,31 @@ stages:
       size: 615126
     - path: src/model.py
       hash: md5
-      md5: be3e8cf997fc7d654fef15617173a0d9
-      size: 2986
+      md5: 9cb8f3001ac60d3499182b2375b3ff27
+      size: 3256
+    params:
+      params.yaml:
+        model.parameter:
+          n_clusters: 8
+          init: k-means++
+          n_init: 10
+          max_iter: 300
+          tol: 1e-06
+          verbose: 0
+          random_state: 42
+          copy_x: true
+          algorithm: lloyd
+        model.test_size: 0.3
     outs:
     - path: data/clean_data/x_test.csv
       hash: md5
-      md5: b1e67c1cb27f6c93c48d35f78b6d34c0
-      size: 121623
+      md5: 487c5c3fc6b083b135d967f1f63b48dd
+      size: 182463
     - path: data/clean_data/x_train.csv
       hash: md5
-      md5: 5a0df2820311690912e6aa8173f64a3b
-      size: 486149
+      md5: 25108f9c469b6260c93ab0fbad0ac9df
+      size: 425309
     - path: models/model.pkl
       hash: md5
-      md5: 4978666e6733745be744bfc93204dc29
-      size: 33181
+      md5: b580b5c52cbd3c73ca5f9387b104bcc5
+      size: 29181

@@ -19,3 +19,70 @@
 2025-07-08 12:57:46,662 - __main__ - DEBUG - Initializing KMeans with parameters: {'n_clusters': 8, 'init': 'k-means++', 'n_init': 10, 'max_iter': 300, 'tol': 0.0001, 'verbose': 0, 'random_state': 42, 'copy_x': True, 'algorithm': 'lloyd'}
 2025-07-08 12:57:48,562 - __main__ - INFO - KMeans training completed.
 2025-07-08 12:57:48,563 - __main__ - INFO - Model saved at models\model.pkl
+2025-07-08 13:39:00,753 - __main__ - INFO - Data loaded from data\clean_data\clean_data1.csv
+2025-07-08 13:39:00,764 - __main__ - DEBUG - Data split into training and test sets.
+2025-07-08 13:39:00,815 - __main__ - INFO - Train-test data saved.
+2025-07-08 13:39:00,815 - __main__ - DEBUG - Starting preprocessing with StandardScaler.
+2025-07-08 13:39:00,815 - __main__ - DEBUG - Initializing KMeans with parameters: {'n_clusters': 10, 'init': 'k-means++', 'n_init': 12, 'max_iter': 200, 'tol': '1e-4', 'verbose': 0, 'random_state': 41, 'copy_x': True, 'algorithm': 'lloyd'}
+2025-07-08 13:39:00,815 - __main__ - ERROR - Model training failed.
+Traceback (most recent call last):
+  File "E:\project\music-recommendation-system\src\model.py", line 54, in model_training
+    model.fit(x_train_scaled)
+  File "E:\project\music-recommendation-system\env0\Lib\site-packages\sklearn\base.py", line 1356, in wrapper
+    estimator._validate_params()
+  File "E:\project\music-recommendation-system\env0\Lib\site-packages\sklearn\base.py", line 469, in _validate_params
+    validate_parameter_constraints(
+  File "E:\project\music-recommendation-system\env0\Lib\site-packages\sklearn\utils\_param_validation.py", line 98, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'tol' parameter of KMeans must be a float in the range [0.0, inf). Got '1e-4' instead.
+2025-07-08 13:39:00,867 - __main__ - ERROR - An error occurred in main.
+Traceback (most recent call last):
+  File "E:\project\music-recommendation-system\src\model.py", line 97, in main
+    model = model_training(x_train, params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project\music-recommendation-system\src\model.py", line 54, in model_training
+    model.fit(x_train_scaled)
+  File "E:\project\music-recommendation-system\env0\Lib\site-packages\sklearn\base.py", line 1356, in wrapper
+    estimator._validate_params()
+  File "E:\project\music-recommendation-system\env0\Lib\site-packages\sklearn\base.py", line 469, in _validate_params
+    validate_parameter_constraints(
+  File "E:\project\music-recommendation-system\env0\Lib\site-packages\sklearn\utils\_param_validation.py", line 98, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'tol' parameter of KMeans must be a float in the range [0.0, inf). Got '1e-4' instead.
+2025-07-08 13:40:50,617 - __main__ - INFO - Data loaded from data\clean_data\clean_data1.csv
+2025-07-08 13:40:50,624 - __main__ - DEBUG - Data split into training and test sets.
+2025-07-08 13:40:50,721 - __main__ - INFO - Train-test data saved.
+2025-07-08 13:40:50,721 - __main__ - DEBUG - Starting preprocessing with StandardScaler.
+2025-07-08 13:40:50,721 - __main__ - DEBUG - Initializing KMeans with parameters: {'n_clusters': 8, 'init': 'k-means++', 'n_init': 10, 'max_iter': 300, 'tol': '1e-4', 'verbose': 0, 'random_state': 42, 'copy_x': True, 'algorithm': 'lloyd'}
+2025-07-08 13:40:50,721 - __main__ - ERROR - Model training failed.
+Traceback (most recent call last):
+  File "E:\project\music-recommendation-system\src\model.py", line 54, in model_training
+    model.fit(x_train_scaled)
+  File "E:\project\music-recommendation-system\env0\Lib\site-packages\sklearn\base.py", line 1356, in wrapper
+    estimator._validate_params()
+  File "E:\project\music-recommendation-system\env0\Lib\site-packages\sklearn\base.py", line 469, in _validate_params
+    validate_parameter_constraints(
+  File "E:\project\music-recommendation-system\env0\Lib\site-packages\sklearn\utils\_param_validation.py", line 98, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'tol' parameter of KMeans must be a float in the range [0.0, inf). Got '1e-4' instead.
+2025-07-08 13:40:50,728 - __main__ - ERROR - An error occurred in main.
+Traceback (most recent call last):
+  File "E:\project\music-recommendation-system\src\model.py", line 97, in main
+    model = model_training(x_train, params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\project\music-recommendation-system\src\model.py", line 54, in model_training
+    model.fit(x_train_scaled)
+  File "E:\project\music-recommendation-system\env0\Lib\site-packages\sklearn\base.py", line 1356, in wrapper
+    estimator._validate_params()
+  File "E:\project\music-recommendation-system\env0\Lib\site-packages\sklearn\base.py", line 469, in _validate_params
+    validate_parameter_constraints(
+  File "E:\project\music-recommendation-system\env0\Lib\site-packages\sklearn\utils\_param_validation.py", line 98, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'tol' parameter of KMeans must be a float in the range [0.0, inf). Got '1e-4' instead.
+2025-07-08 13:42:59,707 - __main__ - INFO - Data loaded from data\clean_data\clean_data1.csv
+2025-07-08 13:42:59,714 - __main__ - DEBUG - Data split into training and test sets.
+2025-07-08 13:42:59,771 - __main__ - INFO - Train-test data saved.
+2025-07-08 13:42:59,771 - __main__ - DEBUG - Starting preprocessing with StandardScaler.
+2025-07-08 13:42:59,777 - __main__ - DEBUG - Initializing KMeans with parameters: {'n_clusters': 8, 'init': 'k-means++', 'n_init': 10, 'max_iter': 300, 'tol': 1e-06, 'verbose': 0, 'random_state': 42, 'copy_x': True, 'algorithm': 'lloyd'}
+2025-07-08 13:43:01,682 - __main__ - INFO - KMeans training completed.
+2025-07-08 13:43:01,685 - __main__ - INFO - Model saved at models\model.pkl

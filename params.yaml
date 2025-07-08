@@ -1,12 +1,13 @@
 model:
-  test_size: 0.3
+  test_size: 0.3  # typical split
   parameter:
-    n_clusters: 8
-    init: k-means++
-    n_init: 10
-    max_iter: 300
-    tol: 1e-4
-    verbose: 0
-    random_state: 42
-    copy_x: true
-    algorithm: lloyd
+    n_clusters: 8              # number of clusters to form
+    init: k-means++            # smart centroid initialization
+    n_init: 10                 # number of initializations to try
+    max_iter: 300              # maximum iterations for a single run
+    tol: 0.000001                 # relative tolerance to declare convergence
+    verbose: 0                 # 0 = no logs, 1 = per step logs
+    random_state: 42           # seed for reproducibility
+    copy_x: true               # if false, may modify input data
+    algorithm: lloyd           # 'lloyd' is standard, can also try 'elkan'
+

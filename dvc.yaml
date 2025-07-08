@@ -17,6 +17,9 @@ stages:
       deps:
         - data/clean_data/clean_data1.csv
         - src/model.py
+      params:
+        - model.test_size
+        - model.parameter
       outs:
         - models/model.pkl
         - data/clean_data/x_train.csv
